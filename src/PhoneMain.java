@@ -15,11 +15,6 @@ public class PhoneMain {
         // Why this is important? We want to demonstrate how to create relationships
         // between classes
 
-        // Create a phone
-        Phone iPhone13 = new Phone();
-        iPhone13.setBrand("Apple");
-        iPhone13.setModel("iPhone 13");
-
         Screen iPhone13Screen = new Screen();
         iPhone13Screen.setSize(6.1f);
         iPhone13Screen.setResolutionWidth(1170);
@@ -28,8 +23,8 @@ public class PhoneMain {
 
         Battery iPhone13Battery = new Battery();
 
-        iPhone13.setPhoneScreen(iPhone13Screen);
-        iPhone13.setPhoneBattery(iPhone13Battery);
+        // Create a phone
+        Phone iPhone13 = new Phone("Apple", "iPhone 13", iPhone13Screen, iPhone13Battery);
 
         Phone samsungS24Ultra = new Phone();
         samsungS24Ultra.setBrand("Samsung");

@@ -8,6 +8,16 @@ public class Phone {
 
     private Battery phoneBattery;
 
+    public Phone(String b, String m, Screen s, Battery bat) {
+        this.brand = b;
+        this.model = m;
+        this.phoneScreen = s;
+        this.phoneBattery = bat;
+    }
+
+    public Phone() {
+    }
+
     public String getBrand() {
         return brand;
     }
